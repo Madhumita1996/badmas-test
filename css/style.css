@@ -1,0 +1,487 @@
+*{
+
+    padding : 0;
+    margin: 0;
+    box-sizing : border-box;
+
+}
+
+
+    ul {
+    list-style-type: none;
+  }
+  
+   ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: var(--navHeight); */
+    padding: 0 10px;
+    color: #ec102d;
+  }
+  
+   ul li {
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: backgro und 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+  } 
+   
+ 
+  
+body {
+    background-color: rgb(212, 204, 204);
+    color: black;
+    --heading: rgb(15, 13, 13);
+   }
+  
+  .dark-mode {
+   background-color: rgb(53, 50, 50);
+   color: white;
+    --heading: white;
+     }
+/* 
+  nav ul li:hover {
+    background-color: var(--nav);
+  } */
+
+
+
+.wrapper *{
+
+    font-family: 'poppins' sans-serif;
+    color: #111311;
+    outline: none;
+    border: none;
+
+}
+
+/* #display1{
+
+    display: block;
+    height: 50px;
+    width: 95%;
+    background: rgba(226, 222, 222, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    border: none;
+    background: rgba(236, 233, 47, 0.623);
+} */
+
+::placeholder{
+
+    color: #e5e5e5e5;
+
+}
+
+.button, .nextLine_btn{
+
+    width: 2em;
+    height:  2em;
+    background: rgba(223, 213, 213, 0.4);
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 13px 0 0;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+.clr-btn{
+
+    
+    width: 2em;
+    height:  2em;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px 13px 0 0;
+    cursor: pointer;
+    border: none;
+    color: rgb(20, 22, 24);
+    background: rgb(243, 26, 26);
+
+}
+.m-btn{
+
+    
+    background:rgb(119, 113, 113);
+
+}
+
+/* .ModernCalculator{
+    
+    margin-top: 0px;
+    margin-left: 13%;
+
+
+} */
+ 
+
+.box , .box2, .box3, .box4{
+        
+    width: 2em;
+    height: 2em;
+    background: rgb(240, 235, 235,0.719);
+    border-radius: 3px;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 9px 20px 0 0;
+    border: none;
+    color: #09090a;
+    text-align: center;
+    border: 1px solid var(--heading);
+    
+    
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 6px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: rgb(90, 85, 85);
+  }
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  
+  }
+  .heading h1{
+
+  text-align: center;
+  align-items: center;
+    font-size: 2em;
+    margin: auto;
+    /* margin-top:1%; */
+    font-weight: 500;
+    color: var(--heading);
+}
+ .box-c{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(113, 228, 113);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.box-p{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 230, 103);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.box-n{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 147, 147);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.popover-content {
+  color:black;
+  font-size: 25px;
+}
+
+
+@media (min-width: 576px) { 
+
+   
+}
+
+ @media only screen and (min-width: 300px) {
+    
+    .button, .nextLine_btn{
+
+        width: 3em;
+        height:  3em;
+        
+    }
+
+    .box , .box2, .box3, .box4{
+        
+        width: 1.6em;
+        height: 1.5em;
+           
+    }
+    .clr-btn{
+
+        width: 3em;
+        height:  3em;
+    }
+    /* .wrapper{
+
+        height: 240px;
+        width : 70%;  
+        margin-left: auto;
+        margin-right: auto;
+      
+        top: 90%;
+        left:70%;
+        background-color:rgb(208, 214, 125);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        padding-top:0px;
+    } */
+    .wrapper1{
+
+        /* height: 140px;  */
+        width : 400px; 
+        
+       background-color: rgb(197, 109, 197);
+      
+        
+       margin-left: auto;
+       margin-right: auto; 
+       padding-left: 3em;
+        /* top: 20%;
+       left:50%; */
+    }
+    .wrapper2{
+
+        /* height: 170px;  */
+        width : 400px; 
+        
+       background-color: rgb(171, 166, 240);
+       align-items: center;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+       /* padding: 5px; */
+      padding-left: 1em;
+        top: 50%;
+        column-gap: 10em;
+       left:50%;
+    }
+    .container-box{
+
+    
+        /* height: 2000; */
+        width : 400px; 
+        
+       background-color: rgb(231, 165, 165);
+       margin-left: auto;
+       margin-right: auto;
+       padding-left: 3em;
+      
+        /* top: 20%;
+       left:50%; */
+   } 
+    
+
+} 
+/* @media only screen and (max-width: 576px) {
+    
+    .button, .nextLine_btn{
+
+        width: 3em;
+        height:  3em;
+        
+    }
+
+    .box , .box2, .box3, .box4{
+        
+        width: 1.5em;
+        height: 1.5em;
+           
+    }
+    .clr-btn{
+
+        width: 1.5em;
+        height:  1.5em;
+    }
+} */
+
+/* // Medium devices (tablets, 768px and up) */
+ /*@media only screen and (max-width: 768px){ 
+
+    
+    .button, .nextLine_btn{
+
+        width: 3.3em;
+        height:  3.3em;
+        
+    }
+
+    .box , .box2, .box3, .box4{
+        
+        width: 1.5em;
+        height: 1.5em;
+           
+    }
+
+    .clr-btn{
+
+        width: 2.2em;
+        height:  2.2em;
+    }
+    .container-box{
+
+    
+        height: 200px; 
+        width : 330px; 
+     
+       background-color: rgb(209, 73, 73);
+       margin-left: auto;
+       margin-right: auto;
+     
+        top: 20%;
+       left:50%;
+   } 
+  
+/* .wrapper1{
+
+    height: 150px;
+    width : 80%;  
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+  
+    background-color: rgb(214, 47, 47);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top:0px;
+}
+.wrapper2{
+
+    height: 87px;
+    width : 96%;  
+    margin-left: auto;
+    margin-right: auto;
+  
+    top: 90%;
+    left:70%;
+    background-color: rgb(197, 14, 14);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top:0px;
+} 
+} */
+
+
+ 
+
+/* // Large devices (desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) { 
+
+    
+    .button, .nextLine_btn{
+
+        width: 3em;
+        height:  3em;
+        
+    }
+
+    .box , .box2, .box3, .box4{
+        
+        width: 2em;
+        height:2em;
+           
+    }
+
+    .clr-btn{
+
+        width: 3em;
+        height:  3em;
+    }
+ } */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+    
+    .button, .nextLine_btn{
+
+        width: 3.5em;
+        height: 3.5em;
+        
+    }
+
+    .box , .box2, .box3, .box4{
+        
+        width: 2em;
+        height: 2em;
+      
+           
+    }
+
+    .clr-btn{
+
+        width: 3.5em;
+        height:  3.5em;
+    }
+    .container-box{
+
+    
+        height: 200px; 
+        width : 400px; 
+     
+       background-color: rgb(212, 204, 204);
+       margin-left: auto;
+       margin-right: auto;
+     
+        top: 20%;
+       left:50%;
+   }
+   .wrapper{
+
+    height: 240px;
+    width : 40%;  
+    margin-left: auto;
+    margin-right: auto;
+   
+    top: 90%;
+    left:70%;
+    background-color:rgb(212, 204, 204);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top:0px;
+}
+.wrapper1{
+
+    height: 150px;
+    width : 80%;  
+    margin-left: auto;
+    margin-right: auto;
+
+  
+  
+    background-color: rgb(212, 204, 204);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top:0px;
+}
+.wrapper2{
+
+    height: 87px;
+    width : 96%;  
+    margin-left: auto;
+    margin-right: auto;
+    
+    top: 90%;
+    left:70%;
+    background-color: rgb(212, 204, 204);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding-top:0px;
+}
+ } */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+
+ }
+
