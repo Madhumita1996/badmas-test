@@ -1,13 +1,13 @@
-.popup-cls .overlay {
+/* .popup-cls .overlay {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
+    /* width: 100vw;
+    height: 100vh; */
+    /* background: rgba(252, 249, 249, 0.7); 
     z-index: 1;
     display: none;
-}
+} */
  
 /* @media only screen and (min-width: 300px){
     .popup-cls1 .content{
@@ -52,7 +52,7 @@
         transform: translate(-50%,-50%) scale(0);
         background: #fff;
         width: 90%;
-        height: 90%;
+        height: auto;
         z-index: 2;
         text-align:start;
         padding: 20px;
@@ -62,7 +62,7 @@
 }
 } 
 
-.content-h1{
+.content-h4{
     text-align: center;
 }
 
