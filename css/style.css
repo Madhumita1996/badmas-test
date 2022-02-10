@@ -220,20 +220,7 @@ a {
         width: 3em;
         height:  3em;
     }
-    /* .wrapper{
-
-        height: 240px;
-        width : 70%;  
-        margin-left: auto;
-        margin-right: auto;
-      
-        top: 90%;
-        left:70%;
-        background-color:rgb(208, 214, 125);
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        padding-top:0px;
-    } */
+   
     .wrapper1{
 
         /* height: 140px;  */
@@ -244,7 +231,7 @@ a {
         
        margin-left: auto;
        margin-right: auto; 
-       padding-left: 3em;
+       padding-left: 3.3em;
         /* top: 20%;
        left:50%; */
     }
