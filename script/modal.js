@@ -15,7 +15,9 @@ function togglePopupWrong() {
 //Congratualation popup js
 function togglePopupCongratualation() {
     document.getElementById("popup-3").classList.toggle("active");
+
 }
+// setTimeout(togglePopupCongratualation,5000);
 
 function togglePopupLose() {
     document.getElementById("popup-4").classList.toggle("active");

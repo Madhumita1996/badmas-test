@@ -749,10 +749,11 @@ function fun() {
                 local_Id_of_O2.style.backgroundColor == color_green) {
 
                 when_all_box_background_color_is_green=1;    
-                togglePopupCongratualation();
+                setTimeout(togglePopupCongratualation,3000);
             }
             else if (count_visited_boxes == 15) {
-                togglePopupLose();
+                // togglePopupLose();
+                setTimeout(togglePopupLose,3000);
 
             }
         }
