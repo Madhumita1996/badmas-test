@@ -8,7 +8,7 @@
 
 #N1 , #O1 , #N2 , #O2 , #N3 ,#N1_2 , #O1_2 , #N2_2 , #O2_2 , #N3_2,#N1_3, #O1_3 , #N2_3 , #O2_3 , #N3_3  {
   transition-property: background-color;
-  transition-duration: 3s;
+  transition-duration: 1s;
 }
 /* #O1 {
   transition-property: background-color;
@@ -291,13 +291,20 @@ a {
       color: var(--heading);
       /* background-color: aquamarine; */
   }
-  .container{
-    /* background-color: beige; */
-    width : auto;
-
-}
+  
 
 } 
+@media only screen and (max-width: 447px) {
+  .container{
+    width: 449px;
+  }
+}
+
+@media only screen and (min-width: 447px) {
+  .container{
+    width: auto;
+  }
+}
 
 
 /* Dark mode Capsule CSS */

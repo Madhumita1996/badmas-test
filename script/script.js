@@ -198,9 +198,7 @@ myMap.set("/", 0)
 //N1 : user input TextBox for number
 var N1_val;
 
-N1_val = Math.floor(Math.random() * 10);
-var N1_val_without_string = N1_val;
-N1_val = N1_val.toString();
+N1_val = Math.floor(Math.random() * 10).toString();
 
 //N2 : user input TextBox for number
 let num_val;
@@ -223,6 +221,7 @@ var result_of_div;
 // This code handles if the operator is '/'. Then the solution of the equation should not result in a fraction.
 if (O1_val == "/") {
 
+    console.log("O1 /");
     // for operator '/'
     while (1) {
 
@@ -232,9 +231,9 @@ if (O1_val == "/") {
             num_val = 1;
 
         // Keeps checking untill suitable value is found that does not results  in a fraction    
-        if (N1_val_without_string % num_val == 0) {
+        if (parseInt(N1_val) % num_val == 0) {
 
-            result_of_div = N1_val / num_val;
+            result_of_div = parseInt(N1_val) / num_val;
             N2_val = num_val.toString();
             break;
         }
@@ -254,6 +253,7 @@ else {
 
 if (O2_val == "/") {
 
+    console.log("O2 /");
     // if the both the operators are '/'. Then solution of the equation should result in fraction 
     if (O1_val == "/") {
 
@@ -290,7 +290,7 @@ if (O2_val == "/") {
                 num_val = 1;
 
             // Keeps checking untill suitable value is found that does not results  in a fraction    
-            if (N2_val % num_val == 0) {
+            if (parseInt(N2_val) % num_val == 0) {
                 N3_val = num_val.toString();
                 break;
             }
@@ -309,6 +309,44 @@ else {
 
 //#endregion
 
+//#region Double Digit Taken Care Section
+
+// ===================================== Double Digit Taken Care Section =================================================
+
+// This code handles that the solution of the equation should lie between the range 0-99 .
+
+if (O1_val == "X" && O2_val == "X") {
+
+    if (N1_val >= 5 && N2_val >= 5) {
+
+        O1_val = operators_array[Math.floor(Math.random() * 2)];  
+    }
+    else if (N2_val >= 5 && N3_val >= 5) {
+
+        O2_val = operators_array[Math.floor(Math.random() * 2)]; 
+    }
+    else if (N1_val >= 5 && N3_val >= 5) {
+
+        let temp_num = Math.floor(Math.random() * 2)
+
+        if (temp_num == 0)
+            O1_val = operators_array[Math.floor(Math.random() * 2)];
+        else
+            O2_val = operators_array[Math.floor(Math.random() * 2)];
+    }
+    else if(parseInt(N1_val) * parseInt(N2_val) * parseInt(N3_val)  >= 100){
+        
+        let temp_num = Math.floor(Math.random() * 2)
+
+        if (temp_num == 0)
+            O1_val = operators_array[Math.floor(Math.random() * 2)];
+        else
+            O2_val = operators_array[Math.floor(Math.random() * 2)];
+
+    }
+}
+
+//#endregion
 
 //#region Handles that the Solution should not be a negative one
 
@@ -356,12 +394,12 @@ else if (O1_val == "-" && (O2_val == "X" || O2_val == "/")) {
 
     if ((parseInt(N1_val) - res) < 0) {
 
-        let temp_num = Math.floor(Math.random() * 2)
+        //let temp_num = Math.floor(Math.random() * 2)
 
-        if (temp_num == 0)
+        //if (temp_num == 0)
             O1_val = "+";
-        else
-            O1_val = "X";
+        //else
+          //  O1_val = "X";
     }
 }
 else if ((O1_val == "X" || O1_val == "/") && O2_val == "-") {
@@ -381,7 +419,7 @@ else if ((O1_val == "X" || O1_val == "/") && O2_val == "-") {
 
         if (temp_num == 0)
             O2_val = "+";
-        else
+        else 
             O2_val = "X";
     }
 }
@@ -426,38 +464,6 @@ else if (O1_val == "-" && O2_val == "-") {
 
 
 //#endregion
-
-
-
-
-//#region Double Digit Taken Care Section
-
-// ===================================== Double Digit Taken Care Section =================================================
-
-// This code handles that the solution of the equation should lie between the range 0-99 .
-if (O1_val == "X" && O2_val == "X") {
-
-    if (N1_val >= 5 && N2_val >= 5) {
-
-        O1_val = operators_array[Math.floor(Math.random() * 3)];
-    }
-    else if (N2_val >= 5 && N3_val >= 5) {
-
-        O2_val = operators_array[Math.floor(Math.random() * 3)];
-    }
-    else if (N1_val >= 5 && N3_val >= 5) {
-
-        let temp_num = Math.floor(Math.random() * 2)
-
-        if (temp_num == 0)
-            O1_val = operators_array[Math.floor(Math.random() * 3)];
-        else
-            O2_val = operators_array[Math.floor(Math.random() * 3)];
-    }
-}
-
-//#endregion
-
 
 //#region Main Funtion (Color handling Section)
 
@@ -749,11 +755,11 @@ function fun() {
                 local_Id_of_O2.style.backgroundColor == color_green) {
 
                 when_all_box_background_color_is_green=1;    
-                setTimeout(togglePopupCongratualation,3000);
+                // togglePopupCongratualation();
+                setTimeout(togglePopupCongratualation,1000);
             }
             else if (count_visited_boxes == 15) {
-                // togglePopupLose();
-                setTimeout(togglePopupLose,3000);
+                setTimeout(togglePopupLose,1000);
 
             }
         }
